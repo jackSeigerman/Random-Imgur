@@ -1,4 +1,4 @@
-import tkinter as tk
+import tkinter as gui
 from tkinter import messagebox
 
 def imgur():
@@ -10,13 +10,13 @@ def gallery():
 def download():
     messagebox.showinfo("Info", "Button clicked!")
 
-root = tk.Tk()
+root = gui.Tk()
 root.title("Tkinter Example")
 root.geometry("300x200")
 
-button1 = tk.Button(root, text="new imgur", command=imgur)
-button2 = tk.Button(root, text="gallery", command=gallery)
-button3 = tk.Button(root, text="download", command=download)
+button1 = gui.Button(root, text="new imgur", command=imgur)
+button2 = gui.Button(root, text="gallery", command=gallery)
+button3 = gui.Button(root, text="download", command=download)
 
 button1.pack(pady=20)
 button2.pack(pady=20)
