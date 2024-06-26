@@ -5,16 +5,16 @@ import java.net.URL;
 
 public class RandomImageGenerator {
     // Characters used to generate the random string
-    private static final String CHARS = "01234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghiklmnopqrstuvwxyz";
+    private static final String possibleCharacters = "01234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghiklmnopqrstuvwxyz";
     // Length of the random string
-    private static final int STRING_LENGTH = 5;
+    private static final int characterLength = 5;
 
     // Method to generate a random string
     public static String generateRandomString() {
         StringBuilder text = new StringBuilder();
-        for (int i = 0; i < STRING_LENGTH; i++) {
-            int randNum = (int) (Math.random() * CHARS.length());
-            text.append(CHARS.charAt(randNum));
+        for (int i = 0; i < characterLength; i++) {
+            int randNum = (int) (Math.random() * possibleCharacters.length());
+            text.append(possibleCharacters.charAt(randNum));
         }
         return text.toString();
     }
