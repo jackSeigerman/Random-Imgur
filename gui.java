@@ -1,6 +1,5 @@
 import javax.swing.*;
 import java.awt.*;
-import java.awt.image.BufferedImage;
 
 public class gui
 {
@@ -39,7 +38,7 @@ public class gui
 
         // button listeners
         randomImageButton.addActionListener(_ -> randomImage.generateAndDisplayImage(imagePanel));
-        galleryButton.addActionListener(_ -> gallery.onLeftButtonClicked());
-        downloadButton.addActionListener(_ -> download.onRightButtonClicked());
+        galleryButton.addActionListener(_ -> gallery.openFolder());
+        downloadButton.addActionListener(_ -> download.downloadCurrent());
     }
 }
