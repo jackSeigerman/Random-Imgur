@@ -1,5 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -16,6 +18,7 @@ public class gallery
     public imageResizer botLeft = new imageResizer();
     public imageResizer botCenter = new imageResizer();
     public imageResizer botRight = new imageResizer();
+    private static boolean debounce = true;
 
 
     //saves the last 10 image ids to a queue
@@ -31,14 +34,19 @@ public class gallery
     {
         // Add functionality for the gallery button here
         System.out.println("Gallery Button Clicked");
-        new gallery().createAndShowGallery();
+        if(debounce)
+        {
+            new gallery().createAndShowGallery();
+            debounce = false;
+        }
 
     }
 
-    private void createAndShowGallery(){
+    private void createAndShowGallery()
+    {
         System.out.println("Creating Gallery");
         JFrame gal = new JFrame("Gallery");
-        gal.setDefaultCloseOperation(gal.EXIT_ON_CLOSE);
+        gal.setDefaultCloseOperation(gal.DISPOSE_ON_CLOSE);
         gal.setLayout(new BorderLayout());
         gal.setSize(500, 400);
 
@@ -47,6 +55,15 @@ public class gallery
         gal.add(topLeft, BorderLayout.NORTH);
         gal.add(topCenter, BorderLayout.CENTER);
         gal.add(topRight, BorderLayout.EAST);
+
+        gal.addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowClosed(WindowEvent e) {
+                debounce = true;
+                System.out.println("Gallery Closed, debounce reset");
+            }
+        });
+
 
     }
 }
