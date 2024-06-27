@@ -3,7 +3,7 @@ import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.net.URL;
 
-public class RandomImageGenerator
+public class randomImage
 {
     // Characters used to generate the random string
     private static final String possibleCharacters = "01234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghiklmnopqrstuvwxyz";
@@ -31,7 +31,7 @@ public class RandomImageGenerator
     }
 
     // Method to generate a random string and display the image
-    public static void generateAndDisplayImage(ImageResizer imagePanel)
+    public static void generateAndDisplayImage(imageResizer imagePanel)
     {
         String text = generateRandomString();
         // upon success of fetching image

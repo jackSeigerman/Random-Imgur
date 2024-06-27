@@ -3,7 +3,7 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 
 // Custom panel for displaying an image
-public class ImageResizer extends JPanel
+public class imageResizer extends JPanel
 {
     // The image to be displayed
     private BufferedImage image;
@@ -12,7 +12,8 @@ public class ImageResizer extends JPanel
     @Override
     protected void paintComponent(Graphics g)
     {
-        super.paintComponent(g); // Call the superclass's paintComponent method
+        // Call the superclasses paintComponent method
+        super.paintComponent(g);
         if (image != null)
         {
             // Use Graphics2D for better rendering control
@@ -59,6 +60,7 @@ public class ImageResizer extends JPanel
     public void setImage(BufferedImage image)
     {
         this.image = image;
-        repaint(); // Trigger a repaint to display the new image
+        // Trigger a repaint to display the new image
+        repaint();
     }
 }
