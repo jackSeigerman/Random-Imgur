@@ -66,4 +66,8 @@ public class randomImage
             generateAndDisplayImage(imagePanel);
         }
     }
+    public static String getID()
+    {
+        return idText;
+    }
 }
