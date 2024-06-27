@@ -49,12 +49,22 @@ public class gallery
         gal.setDefaultCloseOperation(gal.DISPOSE_ON_CLOSE);
         gal.setLayout(new BorderLayout());
         gal.setSize(500, 400);
+        gal.setLayout(new GridLayout(3, 3));
 
         gal.setVisible(true);
 
         gal.add(topLeft, BorderLayout.NORTH);
-        gal.add(topCenter, BorderLayout.CENTER);
-        gal.add(topRight, BorderLayout.EAST);
+        gal.add(topCenter, BorderLayout.NORTH);
+        gal.add(topRight, BorderLayout.NORTH);
+
+        gal.add(midLeft, BorderLayout.CENTER);
+        gal.add(midCenter, BorderLayout.CENTER);
+        gal.add(midRight, BorderLayout.CENTER);
+
+        gal.add(botLeft, BorderLayout.SOUTH);
+        gal.add(botCenter, BorderLayout.SOUTH);
+        gal.add(botRight, BorderLayout.SOUTH);
+
 
         gal.addWindowListener(new WindowAdapter() {
             @Override
