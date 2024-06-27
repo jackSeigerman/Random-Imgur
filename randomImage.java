@@ -56,7 +56,7 @@ public class randomImage
                 {
                     imagePanel.setImage(image);
                     idText = text;
-                    gallery.gallerySave();
+                    gallery.enqueu(text);
                 }
             }
         }

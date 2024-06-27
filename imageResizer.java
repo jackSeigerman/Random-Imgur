@@ -59,7 +59,7 @@ public class imageResizer extends JPanel
     // Method to set the image and repaint the panel
     public void setImage(BufferedImage image)
     {
-        imageResizer.image = image;
+        this.image = image;
         // Trigger a repaint to display the new image
         repaint();
     }
