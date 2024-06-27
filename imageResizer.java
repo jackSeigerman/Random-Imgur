@@ -6,7 +6,7 @@ import java.awt.image.BufferedImage;
 public class imageResizer extends JPanel
 {
     // The image to be displayed
-    private BufferedImage image;
+    private static BufferedImage image;
 
     // Override the paintComponent method to draw the image
     @Override
@@ -62,5 +62,10 @@ public class imageResizer extends JPanel
         this.image = image;
         // Trigger a repaint to display the new image
         repaint();
+    }
+
+    //getter method
+    public static BufferedImage getImage(){
+        return image;
     }
 }

@@ -1,10 +1,11 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.image.BufferedImage;
 
 public class gui
 {
     // initialize GUI Elements
-    private final imageResizer imagePanel = new imageResizer();
+    private static final imageResizer imagePanel = new imageResizer();
     private final JButton randomImageButton = new JButton("Generate Image");
     private final JButton galleryButton = new JButton("Gallery");
     private final JButton downloadButton = new JButton("Download");
@@ -42,4 +43,7 @@ public class gui
         downloadButton.addActionListener(_ -> download.onRightButtonClicked());
     }
 
+    public static BufferedImage getImagePanel(){
+        return imagePanel.getImage();
+    }
 }

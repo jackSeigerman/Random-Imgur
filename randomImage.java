@@ -9,6 +9,12 @@ public class randomImage
     private static final String possibleCharacters = "01234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghiklmnopqrstuvwxyz";
     // Length of the random string
     private static final int characterLength = 5;
+    private static String idText;
+
+    //getter
+    public static String getIdText(){
+        return idText;
+    }
 
     // Method to generate a random string
     public static String generateRandomString()
@@ -49,6 +55,7 @@ public class randomImage
                 if (image != null)
                 {
                     imagePanel.setImage(image);
+                    idText = text;
                 }
             }
         }
