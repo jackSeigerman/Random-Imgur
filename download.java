@@ -11,7 +11,7 @@ public class download
         // Add functionality for the download button here
         System.out.println("Download Button Clicked");
         File outfile = new File("jack/"+randomImage.getIdText()+".png");
-        BufferedImage image = gui.getImagePanel();
+        BufferedImage image = imageResizer.getImage();
         try {
             ImageIO.write(image, "png", outfile);
         } catch (IOException e) {

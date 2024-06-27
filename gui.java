@@ -5,7 +5,7 @@ import java.awt.image.BufferedImage;
 public class gui
 {
     // initialize GUI Elements
-    private static final imageResizer imagePanel = new imageResizer();
+    private final imageResizer imagePanel = new imageResizer();
     private final JButton randomImageButton = new JButton("Generate Image");
     private final JButton galleryButton = new JButton("Gallery");
     private final JButton downloadButton = new JButton("Download");
@@ -41,9 +41,5 @@ public class gui
         randomImageButton.addActionListener(_ -> randomImage.generateAndDisplayImage(imagePanel));
         galleryButton.addActionListener(_ -> gallery.onLeftButtonClicked());
         downloadButton.addActionListener(_ -> download.onRightButtonClicked());
-    }
-
-    public static BufferedImage getImagePanel(){
-        return imagePanel.getImage();
     }
 }
