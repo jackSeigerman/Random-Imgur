@@ -5,6 +5,7 @@ import java.awt.event.WindowEvent;
 import java.util.LinkedList;
 import java.util.Queue;
 
+//comment to check if jack is fucked
 public class gallery
 {
     private static Queue<String> galleryIds = new LinkedList<String>();
