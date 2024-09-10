@@ -5,3 +5,6 @@ to use this app, simply run the Random Imgur exe, or open the code into a jave i
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details
+
+## Credits
+Created by Aryeh Bloom and Jack Seigerman
