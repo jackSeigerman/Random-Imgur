@@ -5,7 +5,7 @@ import java.awt.event.WindowEvent;
 import java.util.LinkedList;
 import java.util.Queue;
 
-//comment to check if jack is fucked
+
 public class gallery
 {
     private static Queue<String> galleryIds = new LinkedList<String>();
@@ -66,7 +66,7 @@ public class gallery
         gal.add(botCenter, BorderLayout.SOUTH);
         gal.add(botRight, BorderLayout.SOUTH);
 
-
+    //window pane closed via user (using the red x)
         gal.addWindowListener(new WindowAdapter() {
             @Override
             public void windowClosed(WindowEvent e) {
