@@ -1,6 +1,5 @@
 import javax.imageio.ImageIO;
-import javax.swing.JFileChooser;
-import javax.swing.UIManager;
+import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -12,7 +11,7 @@ public class download {
     private static final String LAST_USED_FOLDER = "lastUsedFolder";
 
     // Placeholder methods for the Download button
-    public static void onRightButtonClicked() {
+    public static void onRightButtonClicked(imageResizer imagePanel) {
         // Add functionality for the download button here
         System.out.println("Download Button Clicked");
 
@@ -32,7 +31,7 @@ public class download {
         fileChooser.setDialogTitle("Save As");
 
         // Set default file name
-        fileChooser.setSelectedFile(new File(randomImage.getID()+".png"));
+        fileChooser.setSelectedFile(new File(randomImage.getID() + ".png"));
 
         // Set file filter for PNG files
         FileNameExtensionFilter filter = new FileNameExtensionFilter("PNG Images", "png");
@@ -51,10 +50,15 @@ public class download {
             // Save the directory of the selected file
             prefs.put(LAST_USED_FOLDER, fileToSave.getParent());
 
-            BufferedImage image = imageResizer.getImage();
+            // Get the image from the imagePanel
+            BufferedImage image = imagePanel.getImage();
             try {
-                ImageIO.write(image, "png", fileToSave);
-                System.out.println("Image saved to: " + fileToSave.getAbsolutePath());
+                if (image != null) {
+                    ImageIO.write(image, "png", fileToSave);
+                    System.out.println("Image saved to: " + fileToSave.getAbsolutePath());
+                } else {
+                    System.out.println("No image to save.");
+                }
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }

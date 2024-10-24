@@ -37,9 +37,9 @@ public class gui
         // Make the frame visible
         gui.setVisible(true);
 
-        // button listeners
+// button listeners
         randomImageButton.addActionListener(_ -> randomImage.generateAndDisplayImage(imagePanel));
         galleryButton.addActionListener(_ -> gallery.onLeftButtonClicked());
-        downloadButton.addActionListener(_ -> download.onRightButtonClicked());
+        downloadButton.addActionListener(_ -> download.onRightButtonClicked(imagePanel)); // Pass the imagePanel instance
     }
 }
