@@ -1,3 +1,4 @@
+//created by Aryeh Bloom and Jack Seigerman
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
@@ -6,6 +7,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.prefs.Preferences;
 
+// Class to handle the download functionality
 public class download {
 
     private static final String LAST_USED_FOLDER = "lastUsedFolder";

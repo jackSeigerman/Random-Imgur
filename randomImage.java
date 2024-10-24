@@ -1,8 +1,10 @@
+//created by Aryeh Bloom and Jack Seigerman
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.net.URL;
 
+// Class to generate a random image
 public class randomImage
 {
     // Characters used to generate the random string

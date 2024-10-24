@@ -1,3 +1,4 @@
+//created by Aryeh Bloom and Jack Seigerman
 import javax.swing.*;
 import java.awt.*;
 import java.awt.image.BufferedImage;

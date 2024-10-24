@@ -1,3 +1,4 @@
+//created by Aryeh Bloom and Jack Seigerman
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.WindowAdapter;
@@ -7,6 +8,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.awt.image.BufferedImage;
 
+// Class to handle the gallery functionality
 public class gallery {
     private static Queue<String> galleryIds = new LinkedList<>();
     private static final gallery instance = new gallery(); // Singleton instance
