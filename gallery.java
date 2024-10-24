@@ -9,26 +9,26 @@ import java.util.Queue;
 import java.awt.image.BufferedImage;
 
 // Class to handle the gallery functionality
-public class gallery {
+public class Gallery {
     private static Queue<String> galleryIds = new LinkedList<>();
-    private static final gallery instance = new gallery(); // Singleton instance
+    private static final Gallery instance = new Gallery(); // Singleton instance
 
-    public imageResizer topLeft = new imageResizer();
-    public imageResizer topCenter = new imageResizer();
-    public imageResizer topRight = new imageResizer();
-    public imageResizer midLeft = new imageResizer();
-    public imageResizer midCenter = new imageResizer();
-    public imageResizer midRight = new imageResizer();
-    public imageResizer botLeft = new imageResizer();
-    public imageResizer botCenter = new imageResizer();
-    public imageResizer botRight = new imageResizer();
+    public ImageResizer topLeft = new ImageResizer();
+    public ImageResizer topCenter = new ImageResizer();
+    public ImageResizer topRight = new ImageResizer();
+    public ImageResizer midLeft = new ImageResizer();
+    public ImageResizer midCenter = new ImageResizer();
+    public ImageResizer midRight = new ImageResizer();
+    public ImageResizer botLeft = new ImageResizer();
+    public ImageResizer botCenter = new ImageResizer();
+    public ImageResizer botRight = new ImageResizer();
     private boolean debounce = true;
 
     // Private constructor to prevent instantiation
-    private gallery() {}
+    private Gallery() {}
 
     // Method to get the singleton instance
-    public static gallery getInstance() {
+    public static Gallery getInstance() {
         return instance;
     }
 
@@ -43,7 +43,7 @@ public class gallery {
 
     public static void onLeftButtonClicked() {
         System.out.println("Gallery Button Clicked");
-        gallery g = getInstance(); // Use the existing instance
+        Gallery g = getInstance(); // Use the existing instance
         if (g.debounce) {
             g.createAndShowGallery();
             g.debounce = false;
@@ -62,7 +62,7 @@ public class gallery {
         for (String id : galleryIds) {
             BufferedImage image = null; // Fetch the image using the ID
             try {
-                image = randomImage.fetchRandomImage(id);
+                image = RandomImage.fetchRandomImage(id);
             } catch (IOException e) {
                 e.printStackTrace();
             }

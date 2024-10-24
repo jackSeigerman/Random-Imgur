@@ -4,7 +4,7 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 
 // Custom panel for displaying an image
-public class imageResizer extends JPanel
+public class ImageResizer extends JPanel
 {
     // The image to be displayed (instance-specific)
     private BufferedImage image;

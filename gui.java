@@ -4,17 +4,17 @@ import java.awt.*;
 
 
 // Main class for the GUI
-public class gui
+public class Gui
 {
     // initialize GUI Elements
-    private final imageResizer imagePanel = new imageResizer();
+    private final ImageResizer imagePanel = new ImageResizer();
     private final JButton randomImageButton = new JButton("Generate Image");
     private final JButton galleryButton = new JButton("Gallery");
     private final JButton downloadButton = new JButton("Download");
 
     public static void main(String[] args)
     {
-        SwingUtilities.invokeLater(() -> new gui().createAndShowGUI());
+        SwingUtilities.invokeLater(() -> new Gui().createAndShowGUI());
     }
 
     // Method to create and display the GUI
@@ -40,8 +40,8 @@ public class gui
         gui.setVisible(true);
 
         // button listeners
-        randomImageButton.addActionListener(_ -> randomImage.generateAndDisplayImage(imagePanel));
-        galleryButton.addActionListener(_ -> gallery.onLeftButtonClicked());
+        randomImageButton.addActionListener(_ -> RandomImage.generateAndDisplayImage(imagePanel));
+        galleryButton.addActionListener(_ -> Gallery.onLeftButtonClicked());
         downloadButton.addActionListener(_ -> download.onRightButtonClicked(imagePanel)); // Pass the imagePanel instance
     }
 }

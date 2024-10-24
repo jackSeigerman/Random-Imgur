@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.net.URL;
 
 // Class to generate a random image
-public class randomImage
+public class RandomImage
 {
     // Characters used to generate the random string
     private static final String possibleCharacters = "01234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghiklmnopqrstuvwxyz";
@@ -39,7 +39,7 @@ public class randomImage
     }
 
     // Method to generate a random string and display the image
-    public static void generateAndDisplayImage(imageResizer imagePanel)
+    public static void generateAndDisplayImage(ImageResizer imagePanel)
     {
         String text = generateRandomString();
         // upon success of fetching image
@@ -58,7 +58,7 @@ public class randomImage
                 {
                     imagePanel.setImage(image);
                     idText = text;
-                    gallery.enqueu(text);
+                    Gallery.enqueu(text);
                 }
             }
         }

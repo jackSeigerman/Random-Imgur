@@ -13,7 +13,7 @@ public class download {
     private static final String LAST_USED_FOLDER = "lastUsedFolder";
 
     // Placeholder methods for the Download button
-    public static void onRightButtonClicked(imageResizer imagePanel) {
+    public static void onRightButtonClicked(ImageResizer imagePanel) {
         // Add functionality for the download button here
         System.out.println("Download Button Clicked");
 
@@ -33,7 +33,7 @@ public class download {
         fileChooser.setDialogTitle("Save As");
 
         // Set default file name
-        fileChooser.setSelectedFile(new File(randomImage.getID() + ".png"));
+        fileChooser.setSelectedFile(new File(RandomImage.getID() + ".png"));
 
         // Set file filter for PNG files
         FileNameExtensionFilter filter = new FileNameExtensionFilter("PNG Images", "png");
