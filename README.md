@@ -23,6 +23,10 @@ a program to fetch random images from imgur. This occurs one at a time upon hitt
 
 ![Canvas](assets/Resize.gif)
 
+- Easy to use Download and directory interface
+
+![Canvas](assets/Downloading.gif)
+
 ## Installation
 
 ## User Guide
@@ -33,7 +37,7 @@ Click **Generate Image** to start the process
 
 Click **Download** to download the current photo
 
-![Canvas](assets/Dowmload.JPG)
+![Canvas](assets/Download.JPG)
 
 Click **Gallery** to view the previous nine images
 
