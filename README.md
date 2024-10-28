@@ -56,4 +56,4 @@ Unfortunately the internet is the internet, so upon retrieving an image from Img
 ## License
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details
 ## Credits
-Created by Aryeh Bloom and Jack Seigerman
+Created by Jack Seigerman and Aryeh Bloom

@@ -5,7 +5,7 @@
 ![GitHub Release](https://img.shields.io/github/v/release/jackSeigerman/Random-Imgur)
 
 
-a program to fetch random images from imgur. This occurs one at a time upon hitting a button. You can also download the image, or go back and view some previous images fetched.
+A program to fetch random images from imgur. This occurs one at a time upon hitting a button. You can also download the image, or go back and view some previous images fetched.
 
 ![Canvas](assets/RandomImgur.gif)
 
@@ -19,13 +19,20 @@ a program to fetch random images from imgur. This occurs one at a time upon hitt
 
 ## Features
 
-- Dynamic frame and Image resizing
+### Dynamic frame and Image resizing
+Want an image larger? No problem. Want to make the application smaller? No problem. Scale the application and image with ease.
 
 ![Canvas](assets/Resize.gif)
 
-- Easy to use Download and directory interface
+### Easy to use Download and directory interface
+Find a hilarious or interesting photo? Why not download it? With our custom directory GUI finding the right place to save your image just got a lot easier.
 
 ![Canvas](assets/Downloading.gif)
+
+### Quickly view the past nine previous images 
+Saw a photo that looked interesting, but you already generated a new photo? no problem, just click the gallery button to view the past images again.
+
+![Canvas](assets/Gallery.gif)
 
 ## Installation
 
@@ -45,9 +52,8 @@ Click **Gallery** to view the previous nine images
 
 ## Disclaimer
 Unfortunately the internet is the internet, so upon retrieving an image from Imgur, there is no telling what you will get. Please see the [Imgur terms of service](https://imgur.com/tos) for more information. We did not create, place, or change the chances of generating any particular image or type of image.
-## Getting Started
-to use this app, simply run the Random Imgur exe, or open the code into a java ide, and run it from the source code. 
+
 ## License
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details
 ## Credits
-Created by Aryeh Bloom and Jack Seigerman
+Created by Jack Seigerman and Aryeh Bloom

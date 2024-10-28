@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="RandomImgur:jar">
+    <output-path>$PROJECT_DIR$</output-path>
+    <root id="archive" name="RandomImgur.jar">
+      <element id="module-output" name="RandomImgur" />
+    </root>
+  </artifact>
+</component>
