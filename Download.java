@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.util.prefs.Preferences;
 
 // Class to handle the download functionality
-public class download {
+public class Download {
 
     private static final String LAST_USED_FOLDER = "lastUsedFolder";
 
@@ -25,7 +25,7 @@ public class download {
         }
 
         // Get last used directory from preferences
-        Preferences prefs = Preferences.userNodeForPackage(download.class);
+        Preferences prefs = Preferences.userNodeForPackage(Download.class);
         String lastUsedDir = prefs.get(LAST_USED_FOLDER, System.getProperty("user.home"));
 
         // Create a file chooser

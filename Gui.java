@@ -42,6 +42,6 @@ public class Gui
         // button listeners
         randomImageButton.addActionListener(_ -> RandomImage.generateAndDisplayImage(imagePanel));
         galleryButton.addActionListener(_ -> Gallery.onLeftButtonClicked());
-        downloadButton.addActionListener(_ -> download.onRightButtonClicked(imagePanel)); // Pass the imagePanel instance
+        downloadButton.addActionListener(_ -> Download.onRightButtonClicked(imagePanel)); // Pass the imagePanel instance
     }
 }
