@@ -30,7 +30,7 @@ Find a hilarious or interesting photo? Why not download it? With our custom dire
 ![Canvas](assets/Downloading.gif)
 
 ### Quickly view the past nine previous images 
-Saw a photo that looked interesting, but you already generated a new photo? no problem, just click the gallery image to view the past images again.
+Saw a photo that looked interesting, but you already generated a new photo? no problem, just click the gallery button to view the past images again.
 
 ![Canvas](assets/Gallery.gif)
 
