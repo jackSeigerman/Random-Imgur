@@ -44,9 +44,9 @@ Click **Gallery** to view the previous nine images
 ![Canvas](assets/Gallery.JPG)
 
 ## Disclaimer
-Unfortunatley the internet is the internet, so upon retrieving an image from Imgur, there is no telling what you will get. Please see the [Imgur terms of service](https://imgur.com/tos) for more information. We did not create, place, or change the chances of generating any particular image or type of image.
+Unfortunately the internet is the internet, so upon retrieving an image from Imgur, there is no telling what you will get. Please see the [Imgur terms of service](https://imgur.com/tos) for more information. We did not create, place, or change the chances of generating any particular image or type of image.
 ## Getting Started
-to use this app, simply run the Random Imgur exe, or open the code into a jave ide, and run it from the source code. 
+to use this app, simply run the Random Imgur exe, or open the code into a java ide, and run it from the source code. 
 ## License
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details
 ## Credits
