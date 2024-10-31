@@ -36,6 +36,8 @@ Saw a photo that looked interesting, but you already generated a new photo? no p
 
 ## Installation
 
+On the right side of the page there is a "Releases" tab, click it and then find your operating system. 
+
 A JDK of at least version 23 needed to run either the jar or exe. click your operating system to download the JDK if you dont already have it.
 
 [Windows](https://download.oracle.com/java/23/latest/jdk-23_windows-x64_bin.exe)
@@ -44,7 +46,10 @@ A JDK of at least version 23 needed to run either the jar or exe. click your ope
 
 [Linux](https://download.oracle.com/java/23/latest/jdk-23_linux-x64_bin.deb)
 
-after you finished downloading the JDK, open the jar or exe depending on your prefrence from the build folder
+you can then download the Exe or Jar depending on your operating system.
+
+>Likewise, you can download the entire repository and run the Exe or Jar from the build folder
+
 
 
 ## User Guide
@@ -67,4 +72,4 @@ Unfortunately the internet is the internet, so upon retrieving an image from Img
 ## License
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details
 ## Credits
-Created by Jack Seigerman and Aryeh Bloom
+Created by [Jack Seigerman](https://github.com/jackSeigerman), [Aryeh Bloom](https://github.com/aryeh-bloom), and [Michael Boyer](https://github.com/Michael-Boyer)
