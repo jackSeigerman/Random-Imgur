@@ -1,6 +1,7 @@
 //created by Aryeh Bloom and Jack Seigerman
 import javax.imageio.ImageIO;
-import javax.swing.*;
+import javax.swing.UIManager;
+import javax.swing.JFileChooser;
 import javax.swing.filechooser.FileNameExtensionFilter;
 import java.awt.image.BufferedImage;
 import java.io.File;

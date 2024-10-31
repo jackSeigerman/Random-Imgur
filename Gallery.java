@@ -1,6 +1,6 @@
 //created by Aryeh Bloom and Jack Seigerman
-import javax.swing.*;
-import java.awt.*;
+import javax.swing.JFrame;
+import java.awt.GridLayout;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.io.IOException;

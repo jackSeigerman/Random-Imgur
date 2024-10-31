@@ -10,16 +10,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f239e807-61cc-4413-8cc2-b78b95a9c4db" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/RandomImgur_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/RandomImgur.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/RandomImgur.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/jsoup_1_17_2.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RandomImgur/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RandomImgur/.idea/RandomImgur.iml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RandomImgur/.idea/RandomImgur.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RandomImgur/.idea/libraries/jsoup_1_17_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RandomImgur/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RandomImgur/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Download.java" beforeDir="false" afterPath="$PROJECT_DIR$/Download.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gallery.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gallery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gui.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gui.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageResizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/ImageResizer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RandomImgur/Gui.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RandomImgur/Gui.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RandomImgur/ImageResizer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RandomImgur/ImageResizer.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,10 +26,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2o3EKjujQx7uJ8xwhw6WdqIALnD" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -45,7 +42,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "H:/newCode/Random-Imgur/META-INF/MANIFEST.MF",
+    "last_opened_file_path": "C:/Users/mboye/Documents/GitHub/Random-Imgur",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -54,18 +51,10 @@
     "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.20689656",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "settings.editor.selected.configurable": "preferences.customizations",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
-      </set>
-    </attachedChunks>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -80,5 +69,16 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

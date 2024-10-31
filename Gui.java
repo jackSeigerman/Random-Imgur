@@ -1,6 +1,10 @@
 //created by Aryeh Bloom and Jack Seigerman
-import javax.swing.*;
-import java.awt.*;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.SwingUtilities;
+import java.awt.BorderLayout;
+import java.awt.FlowLayout;
 
 
 // Main class for the GUI
