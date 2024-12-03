@@ -1,4 +1,4 @@
-# Random-Imgur <img src="assets/RandomImgurLogo.png" width="120px" alt="Nodify" align="right">
+# Random-Imgur <img src="assets/RandomImgurLogo.png" width="120px" alt="RandomImgurLogo" align="right">
 
 ![Static Badge](https://img.shields.io/badge/Java-f89820)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
