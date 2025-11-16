@@ -63,6 +63,7 @@ public class Download {
                     System.out.println("No image to save.");
                 }
             } catch (IOException e) {
+                System.out.println("Error saving image: " + e.getMessage());
                 throw new RuntimeException(e);
             }
         } else {
