@@ -15,15 +15,6 @@ A modern JavaFX application for discovering random images from Imgur.
 - **Zoom Controls** - Mouse wheel zoom and sidebar controls (Fit, 1:1, +, -)
 - **Responsive Layout** - Adapts to different window sizes
 
-## Screenshots
-
-The application features:
-- Clean dark and light themes
-- Blue accent buttons
-- Smooth image transitions
-- Horizontal scrolling history gallery
-- Zoom sidebar controls
-
 ## Requirements
 
 - **Java 17** or higher (latest version recommended)
