@@ -78,7 +78,7 @@ public class ImageService {
             HttpRequest request = HttpRequest.newBuilder()
                     .uri(URI.create(url))
                     .timeout(Duration.ofSeconds(15))
-                    .header("User-Agent", "RandomImgurViewer/1.0")
+                    .header("User-Agent", "RandomImageGenerator/1.0")
                     .GET()
                     .build();
             

@@ -20,7 +20,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Main application UI for the Random Imgur Viewer.
+ * Main application UI for the Random Image Generator.
  */
 public class RandomImgurApp {
     

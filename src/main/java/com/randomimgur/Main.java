@@ -6,7 +6,7 @@ import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 /**
- * Main entry point for the Random Imgur Viewer application.
+ * Main entry point for the Random Image Generator application.
  */
 public class Main extends Application {
 
@@ -16,7 +16,7 @@ public class Main extends Application {
         Scene scene = new Scene(app.getRoot(), 1200, 800);
         scene.getStylesheets().add(getClass().getResource("/styles/main.css").toExternalForm());
         
-        primaryStage.setTitle("Random Imgur Viewer");
+        primaryStage.setTitle("Random Image Generator");
         primaryStage.setScene(scene);
         primaryStage.setMinWidth(800);
         primaryStage.setMinHeight(600);

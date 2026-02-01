@@ -5,12 +5,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.randomimgur</groupId>
-    <artifactId>random-imgur</artifactId>
+    <artifactId>random-image-generator</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
 
-    <name>Random Imgur Viewer</name>
-    <description>A modern random Imgur image viewer</description>
+    <name>Random Image Generator</name>
+    <description>Discover random images from the depths of Imgur</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
