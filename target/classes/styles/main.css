@@ -1,0 +1,577 @@
+/* 
+ * Simple Dark/Light Theme for Random Imgur Viewer
+ * Clean, minimal design with blue accent buttons
+ */
+
+/* ===== DARK MODE ===== */
+.dark-mode.root-pane {
+    -fx-background-color: #1a1a1a;
+}
+
+.dark-mode .header {
+    -fx-background-color: #242424;
+    -fx-border-color: #3a3a3a;
+    -fx-border-width: 0 0 1 0;
+}
+
+.dark-mode .title-label {
+    -fx-text-fill: #ffffff;
+}
+
+.dark-mode .subtitle-label {
+    -fx-text-fill: #a0a0a0;
+}
+
+.dark-mode .image-container {
+    -fx-background-color: #242424;
+    -fx-border-color: #3a3a3a;
+}
+
+.dark-mode .image-scroll-pane {
+    -fx-background-color: #242424;
+    -fx-background: #242424;
+}
+
+.dark-mode .image-scroll-pane > .viewport {
+    -fx-background-color: #242424;
+}
+
+.dark-mode .placeholder-text {
+    -fx-text-fill: #666666;
+}
+
+.dark-mode .control-panel {
+    -fx-background-color: #242424;
+    -fx-border-color: #3a3a3a;
+}
+
+.dark-mode .status-label {
+    -fx-text-fill: #ffffff;
+}
+
+.dark-mode .image-id-label {
+    -fx-text-fill: #a0a0a0;
+}
+
+.dark-mode .zoom-label {
+    -fx-text-fill: #a0a0a0;
+}
+
+.dark-mode .primary-button {
+    -fx-background-color: #2563eb;
+    -fx-text-fill: #ffffff;
+}
+
+.dark-mode .primary-button:hover {
+    -fx-background-color: #3b82f6;
+}
+
+.dark-mode .primary-button:pressed {
+    -fx-background-color: #1d4ed8;
+}
+
+.dark-mode .primary-button:disabled {
+    -fx-background-color: #3a3a3a;
+    -fx-text-fill: #666666;
+}
+
+.dark-mode .zoom-sidebar {
+    -fx-background-color: #242424;
+    -fx-border-color: #3a3a3a;
+    -fx-border-width: 0 0 0 1;
+}
+
+.dark-mode .zoom-sidebar .separator .line {
+    -fx-border-color: #3a3a3a;
+}
+
+.dark-mode .zoom-button {
+    -fx-background-color: #3a3a3a;
+    -fx-text-fill: #ffffff;
+}
+
+.dark-mode .zoom-button:hover {
+    -fx-background-color: #4a4a4a;
+}
+
+.dark-mode .theme-toggle {
+    -fx-background-color: #3a3a3a;
+    -fx-text-fill: #ffffff;
+}
+
+.dark-mode .theme-toggle:hover {
+    -fx-background-color: #4a4a4a;
+}
+
+.dark-mode .history-panel {
+    -fx-background-color: #1a1a1a;
+    -fx-border-color: #3a3a3a;
+    -fx-border-width: 1 0 0 0;
+}
+
+.dark-mode .history-title {
+    -fx-text-fill: #ffffff;
+}
+
+.dark-mode .history-count {
+    -fx-text-fill: #a0a0a0;
+}
+
+.dark-mode .clear-button {
+    -fx-background-color: #3a3a3a;
+    -fx-text-fill: #ef4444;
+}
+
+.dark-mode .clear-button:hover {
+    -fx-background-color: #4a4a4a;
+}
+
+.dark-mode .history-scroll-pane {
+    -fx-background-color: transparent;
+    -fx-background: transparent;
+}
+
+.dark-mode .history-scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+.dark-mode .history-container {
+    -fx-background-color: transparent;
+}
+
+.dark-mode .thumbnail-box {
+    -fx-background-color: #242424;
+    -fx-border-color: #3a3a3a;
+}
+
+.dark-mode .thumbnail-box-hover {
+    -fx-background-color: #2a2a2a;
+    -fx-border-color: #2563eb;
+}
+
+.dark-mode .thumbnail-id {
+    -fx-text-fill: #a0a0a0;
+}
+
+.dark-mode .thumbnail-button {
+    -fx-background-color: #3a3a3a;
+    -fx-text-fill: #ffffff;
+}
+
+.dark-mode .thumbnail-button:hover {
+    -fx-background-color: #4a4a4a;
+}
+
+.dark-mode .notification-success {
+    -fx-background-color: #22c55e;
+    -fx-text-fill: #ffffff;
+}
+
+.dark-mode .notification-error {
+    -fx-background-color: #ef4444;
+    -fx-text-fill: #ffffff;
+}
+
+.dark-mode .scroll-bar {
+    -fx-background-color: transparent;
+}
+
+.dark-mode .scroll-bar .thumb {
+    -fx-background-color: #4a4a4a;
+}
+
+.dark-mode .scroll-bar .thumb:hover {
+    -fx-background-color: #5a5a5a;
+}
+
+.dark-mode .scroll-bar .track {
+    -fx-background-color: transparent;
+}
+
+/* ===== LIGHT MODE ===== */
+.light-mode.root-pane {
+    -fx-background-color: #f5f5f5;
+}
+
+.light-mode .header {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #e0e0e0;
+    -fx-border-width: 0 0 1 0;
+}
+
+.light-mode .title-label {
+    -fx-text-fill: #1a1a1a;
+}
+
+.light-mode .subtitle-label {
+    -fx-text-fill: #666666;
+}
+
+.light-mode .image-container {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #e0e0e0;
+}
+
+.light-mode .image-scroll-pane {
+    -fx-background-color: #ffffff;
+    -fx-background: #ffffff;
+}
+
+.light-mode .image-scroll-pane > .viewport {
+    -fx-background-color: #ffffff;
+}
+
+.light-mode .placeholder-text {
+    -fx-text-fill: #999999;
+}
+
+.light-mode .control-panel {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #e0e0e0;
+}
+
+.light-mode .status-label {
+    -fx-text-fill: #1a1a1a;
+}
+
+.light-mode .image-id-label {
+    -fx-text-fill: #666666;
+}
+
+.light-mode .zoom-label {
+    -fx-text-fill: #666666;
+}
+
+.light-mode .primary-button {
+    -fx-background-color: #2563eb;
+    -fx-text-fill: #ffffff;
+}
+
+.light-mode .primary-button:hover {
+    -fx-background-color: #3b82f6;
+}
+
+.light-mode .primary-button:pressed {
+    -fx-background-color: #1d4ed8;
+}
+
+.light-mode .primary-button:disabled {
+    -fx-background-color: #e0e0e0;
+    -fx-text-fill: #999999;
+}
+
+.light-mode .zoom-sidebar {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #e0e0e0;
+    -fx-border-width: 0 0 0 1;
+}
+
+.light-mode .zoom-sidebar .separator .line {
+    -fx-border-color: #e0e0e0;
+}
+
+.light-mode .zoom-button {
+    -fx-background-color: #e0e0e0;
+    -fx-text-fill: #1a1a1a;
+}
+
+.light-mode .zoom-button:hover {
+    -fx-background-color: #d0d0d0;
+}
+
+.light-mode .theme-toggle {
+    -fx-background-color: #e0e0e0;
+    -fx-text-fill: #1a1a1a;
+}
+
+.light-mode .theme-toggle:hover {
+    -fx-background-color: #d0d0d0;
+}
+
+.light-mode .history-panel {
+    -fx-background-color: #f5f5f5;
+    -fx-border-color: #e0e0e0;
+    -fx-border-width: 1 0 0 0;
+}
+
+.light-mode .history-title {
+    -fx-text-fill: #1a1a1a;
+}
+
+.light-mode .history-count {
+    -fx-text-fill: #666666;
+}
+
+.light-mode .clear-button {
+    -fx-background-color: #e0e0e0;
+    -fx-text-fill: #ef4444;
+}
+
+.light-mode .clear-button:hover {
+    -fx-background-color: #d0d0d0;
+}
+
+.light-mode .history-scroll-pane {
+    -fx-background-color: transparent;
+    -fx-background: transparent;
+}
+
+.light-mode .history-scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+.light-mode .history-container {
+    -fx-background-color: transparent;
+}
+
+.light-mode .thumbnail-box {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #e0e0e0;
+}
+
+.light-mode .thumbnail-box-hover {
+    -fx-background-color: #f0f0f0;
+    -fx-border-color: #2563eb;
+}
+
+.light-mode .thumbnail-id {
+    -fx-text-fill: #666666;
+}
+
+.light-mode .thumbnail-button {
+    -fx-background-color: #e0e0e0;
+    -fx-text-fill: #1a1a1a;
+}
+
+.light-mode .thumbnail-button:hover {
+    -fx-background-color: #d0d0d0;
+}
+
+.light-mode .notification-success {
+    -fx-background-color: #22c55e;
+    -fx-text-fill: #ffffff;
+}
+
+.light-mode .notification-error {
+    -fx-background-color: #ef4444;
+    -fx-text-fill: #ffffff;
+}
+
+.light-mode .scroll-bar {
+    -fx-background-color: transparent;
+}
+
+.light-mode .scroll-bar .thumb {
+    -fx-background-color: #c0c0c0;
+}
+
+.light-mode .scroll-bar .thumb:hover {
+    -fx-background-color: #a0a0a0;
+}
+
+.light-mode .scroll-bar .track {
+    -fx-background-color: transparent;
+}
+
+/* ===== SHARED STYLES ===== */
+.root-pane {
+    -fx-font-family: "Segoe UI", "SF Pro Display", Arial, sans-serif;
+}
+
+.header {
+    -fx-padding: 15 20;
+}
+
+.title-label {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+}
+
+.subtitle-label {
+    -fx-font-size: 13px;
+}
+
+.center-box {
+    -fx-background-color: transparent;
+}
+
+.image-container {
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-border-width: 1;
+}
+
+.image-scroll-pane {
+    -fx-padding: 10;
+}
+
+.placeholder-box {
+    -fx-opacity: 0.6;
+}
+
+.placeholder-text {
+    -fx-font-size: 16px;
+}
+
+.loading-indicator {
+    -fx-pref-width: 50;
+    -fx-pref-height: 50;
+}
+
+.control-panel {
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-border-width: 1;
+}
+
+.status-label {
+    -fx-font-size: 14px;
+}
+
+.image-id-label {
+    -fx-font-size: 12px;
+    -fx-font-family: "Consolas", "Monaco", monospace;
+}
+
+.styled-button, .primary-button {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 10 20;
+    -fx-background-radius: 6;
+    -fx-border-radius: 6;
+    -fx-cursor: hand;
+}
+
+.zoom-controls {
+    -fx-padding: 0 0 0 20;
+}
+
+.zoom-button {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-min-width: 36;
+    -fx-min-height: 32;
+    -fx-padding: 5 10;
+    -fx-background-radius: 4;
+    -fx-border-radius: 4;
+    -fx-cursor: hand;
+}
+
+.zoom-label {
+    -fx-font-size: 12px;
+    -fx-min-width: 45;
+    -fx-alignment: center;
+    -fx-font-family: "Consolas", "Monaco", monospace;
+}
+
+.theme-toggle {
+    -fx-font-size: 13px;
+    -fx-padding: 8 14;
+    -fx-background-radius: 6;
+    -fx-border-radius: 6;
+    -fx-cursor: hand;
+}
+
+.history-panel {
+    -fx-padding: 10;
+}
+
+.history-title {
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+}
+
+.history-count {
+    -fx-font-size: 12px;
+}
+
+.clear-button {
+    -fx-font-size: 11px;
+    -fx-padding: 5 10;
+    -fx-background-radius: 4;
+    -fx-border-radius: 4;
+    -fx-cursor: hand;
+}
+
+.thumbnail-box {
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-border-width: 1;
+    -fx-padding: 8;
+    -fx-min-width: 120;
+    -fx-pref-width: 120;
+}
+
+.thumbnail-image {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 4, 0, 0, 1);
+}
+
+.thumbnail-id {
+    -fx-font-size: 10px;
+    -fx-font-family: "Consolas", "Monaco", monospace;
+}
+
+.thumbnail-button {
+    -fx-font-size: 10px;
+    -fx-padding: 4 8;
+    -fx-background-radius: 4;
+    -fx-border-radius: 4;
+    -fx-cursor: hand;
+}
+
+.notification-success,
+.notification-error {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 12 24;
+    -fx-background-radius: 6;
+}
+
+/* Zoom sidebar */
+.zoom-sidebar {
+    -fx-padding: 10 8;
+    -fx-spacing: 8;
+}
+
+.zoom-sidebar .zoom-button {
+    -fx-min-width: 40;
+    -fx-min-height: 32;
+    -fx-pref-width: 40;
+}
+
+.zoom-label-sidebar {
+    -fx-font-size: 11px;
+    -fx-min-width: 40;
+    -fx-alignment: center;
+    -fx-font-family: "Consolas", "Monaco", monospace;
+}
+
+.zoom-sidebar .separator {
+    -fx-padding: 4 0;
+}
+
+/* Scrollbar shared */
+.scroll-bar .increment-button,
+.scroll-bar .decrement-button {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+}
+
+.scroll-bar .increment-arrow,
+.scroll-bar .decrement-arrow {
+    -fx-shape: "";
+    -fx-padding: 0;
+}
+
+.scroll-bar .thumb {
+    -fx-background-radius: 4;
+}
+
+/* Tooltip */
+.tooltip {
+    -fx-background-color: rgba(0, 0, 0, 0.85);
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-padding: 6 10;
+    -fx-background-radius: 4;
+}

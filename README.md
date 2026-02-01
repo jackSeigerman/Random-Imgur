@@ -1,75 +1,108 @@
-# Random-Imgur <img src="assets/RandomImgurLogo.png" width="120px" alt="RandomImgurLogo" align="right">
+# Random Imgur Viewer
 
-![Static Badge](https://img.shields.io/badge/Java-f89820)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-![GitHub Release](https://img.shields.io/github/v/release/jackSeigerman/Random-Imgur)
+A modern, sleek JavaFX application for discovering random images from Imgur.
 
-
-A program to fetch random images from imgur. This occurs one at a time upon hitting a button. You can also download the image, or go back and view some previous images fetched.
-
-![Canvas](assets/RandomImgur.gif)
-
-## Table of contents
-- [Features](#features)
-- [Installation](#installation)
-- [User Guide](#user-guide)
-- [Disclaimer](#disclaimer)
-- [License](#license)
-- [Credits](#credits)
+![Java](https://img.shields.io/badge/Java-17+-orange)
+![JavaFX](https://img.shields.io/badge/JavaFX-21-blue)
+![License](https://img.shields.io/badge/License-MIT-green)
 
 ## Features
 
-### Dynamic frame and Image resizing
-Want an image larger? No problem. Want to make the application smaller? No problem. Scale the application and image with ease.
+- 🎲 **Random Image Generation** - Fetches random images from Imgur's vast collection
+- 📜 **Session History** - View all previously fetched images from the current session
+- 💾 **Download Images** - Save any image (current or from history) to your computer
+- 🎨 **Modern Dark UI** - Beautiful glassmorphism-inspired dark theme
+- ✨ **Smooth Animations** - Polished transitions and hover effects
+- 🖼️ **Responsive Layout** - Adapts to different window sizes
 
-![Canvas](assets/Resize.gif)
+## Screenshots
 
-### Easy to use Download and directory interface
-Find a hilarious or interesting photo? Why not download it? With our custom directory GUI finding the right place to save your image just got a lot easier.
+The application features a modern dark theme with:
+- Gradient backgrounds
+- Glassmorphism effects
+- Animated buttons
+- Smooth image transitions
+- Horizontal scrolling history gallery
 
-![Canvas](assets/Downloading.gif)
+## Requirements
 
-### Quickly view the past nine previous images 
-Saw a photo that looked interesting, but you already generated a new photo? no problem, just click the gallery button to view the past images again.
+- **Java 17** or higher
+- **Maven 3.6+** (for building)
 
-![Canvas](assets/Gallery.gif)
+## Building the Application
 
-## Installation
+### Build with Maven
 
-On the right side of the page there is a "Releases" tab, click it and then find your operating system. 
+```bash
+# Clone the repository
+cd random-imgur
 
-A JDK of at least version 23 needed to run either the jar or exe. click your operating system to download the JDK if you dont already have it.
+# Build the project
+mvn clean package
 
-[Windows](https://download.oracle.com/java/23/latest/jdk-23_windows-x64_bin.exe)
+# The JAR file will be created in the target directory
+```
 
-[Mac](https://download.oracle.com/java/23/latest/jdk-23_macos-aarch64_bin.dmg)
+### Running the Application
 
-[Linux](https://download.oracle.com/java/23/latest/jdk-23_linux-x64_bin.deb)
+#### Option 1: Run with Maven
+```bash
+mvn javafx:run
+```
 
-you can then download the Exe or Jar depending on your operating system.
+#### Option 2: Run the JAR file
+```bash
+java -jar target/random-imgur-1.0.0.jar
+```
 
->Likewise, you can download the entire repository and run the Exe or Jar from the build folder
+> **Note:** If you encounter issues running the JAR directly, you may need to use the JavaFX runtime:
+> ```bash
+> java --module-path /path/to/javafx-sdk/lib --add-modules javafx.controls,javafx.fxml,javafx.swing -jar target/random-imgur-1.0.0.jar
+> ```
 
+## Usage
 
+1. **Generate Random Image** - Click the "🎲 Generate Random" button to fetch a random image
+2. **View Image** - The image is displayed in the center panel
+3. **Download** - Click "💾 Download" to save the current image
+4. **History** - Previously fetched images appear in the bottom gallery
+5. **View Past Image** - Click any thumbnail or the 👁 button to view a previous image
+6. **Download from History** - Click the 💾 button on any thumbnail to download it
+7. **Clear History** - Use the "🗑️ Clear" button to reset the session history
 
-## User Guide
+## Project Structure
 
-Click **Generate Image** to start the process
+```
+random-imgur/
+├── pom.xml                              # Maven configuration
+├── src/
+│   └── main/
+│       ├── java/
+│       │   ├── module-info.java         # Java module definition
+│       │   └── com/randomimgur/
+│       │       ├── Main.java            # Application entry point
+│       │       ├── Launcher.java        # JAR launcher (workaround)
+│       │       ├── RandomImgurApp.java  # Main UI class
+│       │       └── ImageService.java    # Image fetching service
+│       └── resources/
+│           └── styles/
+│               └── main.css             # Modern dark theme styles
+└── README.md
+```
 
-![Canvas](assets/GenerateImage.JPG)
+## Technical Details
 
-Click **Download** to download the current photo
+- **JavaFX** - Modern UI toolkit for Java
+- **HttpClient** - Java 11+ HTTP client for fetching images
+- **CSS Styling** - Custom glassmorphism-inspired dark theme
+- **Async Operations** - Non-blocking image fetching
+- **Maven Shade Plugin** - Creates executable fat JAR
 
-![Canvas](assets/Download.JPG)
+## Credits
 
-Click **Gallery** to view the previous nine images
-
-![Canvas](assets/Gallery.JPG)
-
-## Disclaimer
-Unfortunately the internet is the internet, so upon retrieving an image from Imgur, there is no telling what you will get. Please see the [Imgur terms of service](https://imgur.com/tos) for more information. We did not create, place, or change the chances of generating any particular image or type of image.
+Original concept by Aryeh Bloom and Jack Seigerman.
+Modern UI redesign and rewrite.
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details
-## Credits
-Created by [Jack Seigerman](https://github.com/jackSeigerman), [Aryeh Bloom](https://github.com/aryeh-bloom), and [Michael Boyer](https://github.com/Michael-Boyer)
+
+MIT License - feel free to use and modify!
